@@ -1,54 +1,60 @@
-header {
-  display: flex;
-  position: fixed;
-  align-items: center;
-  justify-content: space-between;
-  background: none;
-  padding: 10px 20px;
-  height: 5rem;
-  row-gap: 2rem;
-  width: 97%;
-}
-
-.logo img {
-  height: 10rem;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
   padding: 0;
 }
 
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
 nav ul {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
+  padding: 0;
   display: flex;
 }
 
 nav ul li {
-  margin: 0 10px;
+  position: relative;
 }
 
 nav ul li a {
-  color: black;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
   text-decoration: none;
-  font-size: 20px;
-}
-nav ul {
-  gap: 1.5rem;
-}
-
-.list {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
 }
 
 nav ul li a:hover {
-  text-decoration: bold;
-  background: 3rem, #2980b2;
-  background-size: contain;
-  border-radius: 4px;
-  height: 2rem;
-}
-footer {
-  background: blue;
+  background-color: #575757;
 }
 
-/* git check */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

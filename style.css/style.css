@@ -13,7 +13,7 @@ header {
   position: fixed;
   align-items: center;
   justify-content: space-between;
-  background: none;
+  background: white;
   padding: 10px 20px;
   height: 5rem;
   row-gap: 2rem;
@@ -115,6 +115,7 @@ button {
   font-size: 3rem;
   color: #2980b2;
 }
+
 .column-p {
   padding-left: 7rem;
   font-size: 1.5rem;
@@ -127,21 +128,39 @@ button {
 .column-img {
   height: 25rem;
 }
-.img-link {
-  padding-top: 10rem;
-}
-.image {
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-.img-link-imgs {
+.gallery {
   height: 30rem;
-  width: 25rem;
+  width: 95%;
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+  margin-right: 2rem;
+  align-items: center;
 }
-.image a:hover {
-  height: 32rem;
-  width: 27rem;
+.image-cont {
+  margin: 0 1%;
+  flex-grow: 1;
+  flex-basis: 0;
+  transition: 0.5s;
+}
+.image-cont img {
+  height: 40rem;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.image-cont:hover {
+  flex-basis: 50%;
+}
+.active {
+  flex-basis: 50%;
+}
+.gallery:hover .active {
+  flex-basis: 0;
+}
+.image-cont:nth-child(1):hover {
+  flex-basis: 50%;
 }
 footer {
   background: linear-gradient(270deg, #2980b9, rgba(0, 60, 255, 0.219));
