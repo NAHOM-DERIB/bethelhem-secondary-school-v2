@@ -1,0 +1,52 @@
+header {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  padding: 10px 20px;
+  height: 5rem;
+  row-gap: 2rem;
+  width: 97%;
+}
+
+.logo img {
+  height: 10rem;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+nav ul {
+  gap: 1.5rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+nav ul li a:hover {
+  text-decoration: bold;
+  background: 3rem, #2980b2;
+  background-size: contain;
+  border-radius: 4px;
+  height: 2rem;
+}
+footer {
+  background: blue;
+}
