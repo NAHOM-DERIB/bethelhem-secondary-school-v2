@@ -35,9 +35,7 @@ header {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   margin-right: 5rem;
 }
-.search :hover {
-  height: 35px;
-}
+
 .search input {
   width: 300px;
   outline: none;
@@ -64,9 +62,13 @@ header {
   padding-top: 20px;
 }
 .list li:hover {
+  color: white;
   border-radius: 10px;
   background: #2980b2;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.list li a:hover {
   color: white;
 }
 .list li:active {
@@ -126,6 +128,26 @@ button {
   border: none;
   cursor: pointer, progress;
 }
+.container-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 2rem 10rem;
+}
+.part {
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  margin-top: 5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.icon-logo {
+  margin-top: 3rem;
+  font-size: 30px;
+  line-height: 60px;
+  position: relative;
+}
 .h-2 {
   text-align: center;
   font-size: 3rem;
@@ -158,13 +180,13 @@ button {
   margin: 0 1%;
   flex-grow: 1;
   flex-basis: 0;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .image-cont img {
   height: 40rem;
   width: 100%;
   object-fit: cover;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .image-cont:hover {
   flex-basis: 50%;
@@ -219,7 +241,7 @@ footer {
   margin-left: 17rem;
 }
 .social-media {
-  padding-left: 35rem;
+  padding-left: 20rem;
   padding-top: 3rem;
   display: flex;
   list-style: none;
@@ -262,11 +284,68 @@ footer {
   left: 0;
   background: white;
   position: absolute;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .social-media li a:hover::after {
   top: 0;
 }
 .social-media a:hovern.fa {
   background-color: #ffec17;
+}
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100px;
+  }
+  header {
+    width: 100%;
+    position: fixed;
+    background: #ffec17;
+    height: 2rem;
+  }
+  .logo img {
+    height: 3rem;
+    margin-left: 0;
+  }
+  .search {
+    display: none;
+  }
+  .list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .last-li {
+    margin-right: 1000px;
+  }
+  .list li a {
+    font-size: 10px;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .container {
+    display: block;
+    background: white;
+  }
+  .container img {
+    height: 15rem;
+    padding-top: 2rem;
+    align-items: center;
+  }
+  .hero-text1 {
+    height: 15rem;
+    width: 20rem;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+    text-align: c;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 0.7rem;
+  }
 }
