@@ -19,6 +19,7 @@ header {
   height: 5rem;
   row-gap: 2rem;
   width: 97%;
+  background-color: white;
 }
 
 .logo img {
